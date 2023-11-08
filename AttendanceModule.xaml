@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="AttendanceModule" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="810,4812" sap2010:WorkflowViewState.IdRef="AttendanceModule_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable11" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd3="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd4="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable10" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugad="clr-namespace:UiPath.GSuite.Activities.Drive;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugas="clr-namespace:UiPath.GSuite.Activities.Sheets;assembly=UiPath.GSuite.Activities" xmlns:ugase="clr-namespace:UiPath.GSuite.Activities.Sheets.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="AttendanceModule" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="600,505" sap2010:WorkflowViewState.IdRef="AttendanceModule_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable11" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd3="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd4="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable10" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugad="clr-namespace:UiPath.GSuite.Activities.Drive;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugas="clr-namespace:UiPath.GSuite.Activities.Sheets;assembly=UiPath.GSuite.Activities" xmlns:ugase="clr-namespace:UiPath.GSuite.Activities.Sheets.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -156,7 +156,7 @@
       <AssemblyReference>Studio.Generated.TypedDataTable11</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="AttendanceModule" sap:VirtualizedContainerService.HintSize="820,4747" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AttendanceModule" sap:VirtualizedContainerService.HintSize="450,85" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="abhishek.tout@gmail.com" Name="schoolEmail" />
       <Variable x:TypeArguments="x:Int32" Name="index" />
@@ -165,11 +165,11 @@
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" Timeout="{x:Null}" Account="abhishek.tout@gmail.com" Action="UseExisting" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="758,83" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_1" Mode="Browse" SpreadsheetId="https://docs.google.com/spreadsheets/d/1TFWR3hh-yBCgaKsls4nlWKkkS-FH__YMVRKF27VJYZA/edit?usp=drivesdk" SpreadsheetName="StudentAttendanceData" UseConnectionService="False" UserEmail="abhishek.tout@gmail.com">
+    <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" Timeout="{x:Null}" Account="abhishek.tout@gmail.com" Action="UseExisting" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="388,83" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_1" Mode="Browse" SpreadsheetId="https://docs.google.com/spreadsheets/d/1TFWR3hh-yBCgaKsls4nlWKkkS-FH__YMVRKF27VJYZA/edit?usp=drivesdk" SpreadsheetName="StudentAttendanceData" UseConnectionService="False" UserEmail="abhishek.tout@gmail.com">
       <ugas:GoogleSheetsApplicationScope.Body>
         <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
           <ActivityAction.Argument>
@@ -228,13 +228,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ugas:GoogleSheetsApplicationScope>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[output]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="758,4513" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[output]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd1:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd1:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="724,4323" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="314,171" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd4:DataTable10" Name="outputDataTable" />
               <Variable x:TypeArguments="x:String" Name="month" />
@@ -247,29 +247,30 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ugad:GoogleDriveApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" Timeout="{x:Null}" Account="abhishek.tout@gmail.com" Connector="uipath-google-drive" DisplayName="Use Google Drive" sap:VirtualizedContainerService.HintSize="682,4235" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_1" UseConnectionService="False" UserEmail="abhishek.tout@gmail.com">
+            <ugad:GoogleDriveApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" Timeout="{x:Null}" Account="abhishek.tout@gmail.com" Connector="uipath-google-drive" DisplayName="Use Google Drive" sap:VirtualizedContainerService.HintSize="272,83" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_1" UseConnectionService="False" UserEmail="abhishek.tout@gmail.com">
               <ugad:GoogleDriveApplicationScope.Body>
                 <ActivityAction x:TypeArguments="ugad:IGoogleDriveTarget">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ugad:IGoogleDriveTarget" Name="GoogleDrive" />
                   </ActivityAction.Argument>
-                  <Sequence sap:VirtualizedContainerService.HintSize="648,4091" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence sap:VirtualizedContainerService.HintSize="450,85" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="s:String[]" Name="files" />
                     </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="586,905" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,85" sap2010:WorkflowViewState.IdRef="Sequence_5">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Assign sap:VirtualizedContainerService.HintSize="438,84" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_1">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[attendanceShit]</OutArgument>
                         </Assign.To>
@@ -277,7 +278,7 @@
                           <InArgument x:TypeArguments="x:String">[CurrentRow("Attendance Shit").ToString.replace("open?id=", "file/d/")]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <Assign sap:VirtualizedContainerService.HintSize="438,84" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_2">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[month]</OutArgument>
                         </Assign.To>
@@ -285,7 +286,7 @@
                           <InArgument x:TypeArguments="x:String">[CurrentRow("Month").ToString]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <Assign sap:VirtualizedContainerService.HintSize="438,84" sap2010:WorkflowViewState.IdRef="Assign_3">
+                      <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_3">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[classShit]</OutArgument>
                         </Assign.To>
@@ -293,7 +294,7 @@
                           <InArgument x:TypeArguments="x:String">[CurrentRow("Class").ToString]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <Assign sap:VirtualizedContainerService.HintSize="438,84" sap2010:WorkflowViewState.IdRef="Assign_6">
+                      <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_6">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[teacherEmail]</OutArgument>
                         </Assign.To>
@@ -301,10 +302,10 @@
                           <InArgument x:TypeArguments="x:String">[CurrentRow("Teacher Email Address").ToString]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,298" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,54" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
@@ -335,7 +336,7 @@
                         </TryCatch.Catches>
                       </TryCatch>
                     </Sequence>
-                    <Assign sap:VirtualizedContainerService.HintSize="586,84" sap2010:WorkflowViewState.IdRef="Assign_4">
+                    <Assign sap:VirtualizedContainerService.HintSize="450,84" sap2010:WorkflowViewState.IdRef="Assign_4">
                       <Assign.To>
                         <OutArgument x:TypeArguments="s:String[]">[files]</OutArgument>
                       </Assign.To>
@@ -343,13 +344,13 @@
                         <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles("C:\Users\123\Desktop\S_M_S_UI_PAHT\Attendance\")]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="586,2911" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[files]">
+                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="450,54" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[files]">
                       <ui:ForEach.Body>
                         <ActivityAction x:TypeArguments="x:String">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:String" Name="currentItem" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,2721" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,465" sap2010:WorkflowViewState.IdRef="Sequence_7">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="ocrData" />
                               <Variable x:TypeArguments="x:String" Name="monthShit" />
@@ -359,7 +360,7 @@
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:ReadPDFWithOCR Text="{x:Null}" DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="[currentItem]" sap:VirtualizedContainerService.HintSize="510,199" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_1" ImageDpi="150" Range="All">
+                            <ui:ReadPDFWithOCR Text="{x:Null}" DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="[currentItem]" sap:VirtualizedContainerService.HintSize="434,159" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_1" ImageDpi="150" Range="All">
                               <ui:ReadPDFWithOCR.OCREngine>
                                 <ActivityFunc x:TypeArguments="sd2:Image, scg:IEnumerable(scg:KeyValuePair(sd3:Rectangle, x:String))">
                                   <ActivityFunc.Argument>
@@ -375,7 +376,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:ReadPDFWithOCR>
-                            <Assign sap:VirtualizedContainerService.HintSize="510,84" sap2010:WorkflowViewState.IdRef="Assign_5">
+                            <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_5">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[monthShit]</OutArgument>
                               </Assign.To>
@@ -383,9 +384,15 @@
                                 <InArgument x:TypeArguments="x:String">[month.Substring(0,3)]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <If Condition="[ocrData.Contains(&quot;Mount Carmal School Attendance Sheet&quot;) And ocrData.Contains(classShit) And ocrData.Contains(monthShit)]" sap:VirtualizedContainerService.HintSize="510,2270" sap2010:WorkflowViewState.IdRef="If_1">
+                            <If Condition="[ocrData.Contains(&quot;Mount Carmal School Attendance Sheet&quot;) And ocrData.Contains(classShit) And ocrData.Contains(monthShit)]" sap:VirtualizedContainerService.HintSize="434,54" sap2010:WorkflowViewState.IdRef="If_1">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
                               <If.Then>
-                                <Sequence sap:VirtualizedContainerService.HintSize="476,2086" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                <Sequence sap:VirtualizedContainerService.HintSize="476,830" sap2010:WorkflowViewState.IdRef="Sequence_8">
                                   <Sequence.Variables>
                                     <Variable x:TypeArguments="x:String" Name="StudentIDs" />
                                     <Variable x:TypeArguments="x:String" Name="AttendanceMarks" />
@@ -422,7 +429,7 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </ui:InvokeCode>
-                                  <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[codeOutput]">
+                                  <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="434,54" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[codeOutput]">
                                     <ui:ForEach.Body>
                                       <ActivityAction x:TypeArguments="x:Object">
                                         <ActivityAction.Argument>
@@ -733,20 +740,20 @@
                                     </ui:ForEach.Body>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </ui:ForEach>
-                                  <If Condition="[studentIdRightFlag]" sap:VirtualizedContainerService.HintSize="434,489" sap2010:WorkflowViewState.IdRef="If_3">
+                                  <If Condition="[studentIdRightFlag]" sap:VirtualizedContainerService.HintSize="434,54" sap2010:WorkflowViewState.IdRef="If_3">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                     <If.Then>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="376,305" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                      <Sequence sap:VirtualizedContainerService.HintSize="376,207" sap2010:WorkflowViewState.IdRef="Sequence_15">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="x:String" Name="gmailPassword" />
                                         </Sequence.Variables>
@@ -756,13 +763,13 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                         <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="GetPassword_3" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA52jKc9RYEEeLgoppyACOJwAAAAACAAAAAAAQZgAAAAEAACAAAADPaSLqyMi4h3gmyxzchw6bQy80Kdzv/XNmHVBBLfuxMQAAAAAOgAAAAAIAACAAAABiqIz5EyD/O4fANj+6qETJsAYnXMNGdGRaZTdd/x0E3CAAAACD5XJdij5ijUGqoPnpAOQKWJWFosfp7eZh7k5ZYbvqbEAAAAD9Kzd63Ue1yRSzsKYtCm0vgr1BkZpkCo3WIvzZ0vrSmVGRFBv+I3qHlugK89cRMe2fBfWDriytVAgZjdgJzcdZ" Result="[gmailPassword]" />
-                                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Dear Class Teacher,&#xA;&#xA;I am pleased to inform you that all student attendance data for &quot;+month+&quot; in &quot;+classShit+&quot; has been successfully submit into our records. The process has been completed without any issues, and the attendance records for all students are now up to date.&#xA;&#xA;Your timely assistance in resolving the initial issue and ensuring the accuracy of the data is greatly appreciated. If you have any further questions or concerns, please do not hesitate to reach out.&#xA;&#xA;Thank you for your cooperation and commitment to maintaining accurate attendance records.&#xA;&#xA;Sincerely,&#xA;Mount Carmal School&#xA;&quot;+schoolEmail]" DisplayName="Send SMTP Mail Message" Email="[schoolEmail]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,152" sap2010:WorkflowViewState.IdRef="SendMail_3" IgnoreCRL="False" IsBodyHtml="False" Password="[gmailPassword]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject=" Attendance Data Successfully Submitted" To="[teacherEmail]">
+                                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Dear Class Teacher,&#xA;&#xA;I am pleased to inform you that all student attendance data for &quot;+month+&quot; in &quot;+classShit+&quot; has been successfully submit into our records. The process has been completed without any issues, and the attendance records for all students are now up to date.&#xA;&#xA;Your timely assistance in resolving the initial issue and ensuring the accuracy of the data is greatly appreciated. If you have any further questions or concerns, please do not hesitate to reach out.&#xA;&#xA;Thank you for your cooperation and commitment to maintaining accurate attendance records.&#xA;&#xA;Sincerely,&#xA;Mount Carmal School&#xA;&quot;+schoolEmail]" DisplayName="Send SMTP Mail Message" Email="[schoolEmail]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,54" sap2010:WorkflowViewState.IdRef="SendMail_3" IgnoreCRL="False" IsBodyHtml="False" Password="[gmailPassword]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject=" Attendance Data Successfully Submitted" To="[teacherEmail]">
                                           <ui:SendMail.Files>
                                             <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                                           </ui:SendMail.Files>
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
@@ -787,18 +794,18 @@
                                       <InArgument x:TypeArguments="x:Int32">[index+1]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim folderPath As String = &quot;C:\Users\123\Desktop\S_M_S_UI_PAHT\Attendance\&quot;&#xA;Dim files() As String = System.IO.Directory.GetFiles(folderPath)&#xA;&#xA;For Each file As String In files&#xA;    System.IO.File.Delete(file)&#xA;Next" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="InvokeCode_4">
+                                  <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim folderPath As String = &quot;C:\Users\123\Desktop\S_M_S_UI_PAHT\Attendance\&quot;&#xA;Dim files() As String = System.IO.Directory.GetFiles(folderPath)&#xA;&#xA;For Each file As String In files&#xA;    System.IO.File.Delete(file)&#xA;Next" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="434,54" sap2010:WorkflowViewState.IdRef="InvokeCode_4">
                                     <ui:InvokeCode.Arguments>
                                       <scg:Dictionary x:TypeArguments="x:String, Argument" />
                                     </ui:InvokeCode.Arguments>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </ui:InvokeCode>
-                                  <uga:WriteRowConnections AllFields="{x:Null}" ArrayRow="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="SuccessfullySubmitStudentAttendanceData" BrowserItemId="1sCphPYlL4P3Wqd4Z0Ev8edS6tM00PcqQyO6JOFM6uys" ConnectionId="abbc86cd-b696-4594-8e0d-95506469011e" DataRow="[CurrentRow]" DataType="DataRow" DisplayName="Write Row" HasHeaders="False" sap:VirtualizedContainerService.HintSize="434,367" sap2010:WorkflowViewState.IdRef="WriteRowConnections_2" ItemSelectionMode="Browse" Range="'Form Responses 1'" RowPosition="0" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Append">
+                                  <uga:WriteRowConnections AllFields="{x:Null}" ArrayRow="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="SuccessfullySubmitStudentAttendanceData" BrowserItemId="1sCphPYlL4P3Wqd4Z0Ev8edS6tM00PcqQyO6JOFM6uys" ConnectionId="abbc86cd-b696-4594-8e0d-95506469011e" DataRow="[CurrentRow]" DataType="DataRow" DisplayName="Write Row" HasHeaders="False" sap:VirtualizedContainerService.HintSize="434,54" sap2010:WorkflowViewState.IdRef="WriteRowConnections_2" ItemSelectionMode="Browse" Range="'Form Responses 1'" RowPosition="0" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Append">
                                     <uga:WriteRowConnections.FileIdBackup>
                                       <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" StoredValue="{x:Null}">
                                         <usau:BackupSlot.BackupValues>
@@ -825,12 +832,12 @@
                                     </uga:WriteRowConnections.State>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </uga:WriteRowConnections>
-                                  <uga:DeleteRowsConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="StudentAttendanceData" BrowserItemId="1TFWR3hh-yBCgaKsls4nlWKkkS-FH__YMVRKF27VJYZA" ConnectionId="abbc86cd-b696-4594-8e0d-95506469011e" DeleteMode="Clear" DisplayName="Delete Rows" sap:VirtualizedContainerService.HintSize="434,315" sap2010:WorkflowViewState.IdRef="DeleteRowsConnections_2" ItemSelectionMode="Browse" Range="'Form Responses 1'" Rows="[deleteRow.ToString]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+                                  <uga:DeleteRowsConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="StudentAttendanceData" BrowserItemId="1TFWR3hh-yBCgaKsls4nlWKkkS-FH__YMVRKF27VJYZA" ConnectionId="abbc86cd-b696-4594-8e0d-95506469011e" DeleteMode="Clear" DisplayName="Delete Rows" sap:VirtualizedContainerService.HintSize="434,54" sap2010:WorkflowViewState.IdRef="DeleteRowsConnections_2" ItemSelectionMode="Browse" Range="'Form Responses 1'" Rows="[deleteRow.ToString]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
                                     <uga:DeleteRowsConnections.FileIdBackup>
                                       <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" StoredValue="{x:Null}">
                                         <usau:BackupSlot.BackupValues>
@@ -840,7 +847,7 @@
                                     </uga:DeleteRowsConnections.FileIdBackup>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
@@ -848,7 +855,7 @@
                                 </Sequence>
                               </If.Then>
                               <If.Else>
-                                <Sequence sap:VirtualizedContainerService.HintSize="476,1396" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                <Sequence sap:VirtualizedContainerService.HintSize="476,613" sap2010:WorkflowViewState.IdRef="Sequence_9">
                                   <Sequence.Variables>
                                     <Variable x:TypeArguments="x:String" Name="gmailPassword" />
                                     <Variable x:TypeArguments="x:Int32" Name="deleteRow" />
@@ -866,18 +873,18 @@
                                       <InArgument x:TypeArguments="x:Int32">[index+1]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim folderPath As String = &quot;C:\Users\123\Desktop\S_M_S_UI_PAHT\Attendance\&quot;&#xA;Dim files() As String = System.IO.Directory.GetFiles(folderPath)&#xA;&#xA;For Each file As String In files&#xA;    System.IO.File.Delete(file)&#xA;Next" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+                                  <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim folderPath As String = &quot;C:\Users\123\Desktop\S_M_S_UI_PAHT\Attendance\&quot;&#xA;Dim files() As String = System.IO.Directory.GetFiles(folderPath)&#xA;&#xA;For Each file As String In files&#xA;    System.IO.File.Delete(file)&#xA;Next" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="434,54" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
                                     <ui:InvokeCode.Arguments>
                                       <scg:Dictionary x:TypeArguments="x:String, Argument" />
                                     </ui:InvokeCode.Arguments>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </ui:InvokeCode>
-                                  <uga:WriteRowConnections AllFields="{x:Null}" ArrayRow="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="NotVerifyStudentAttendanceShit" BrowserItemId="1ZS0thftd7h9I8JUiylLZJgOK-53ngYec6aYUOP5h5Rs" ConnectionId="abbc86cd-b696-4594-8e0d-95506469011e" DataRow="[CurrentRow]" DataType="DataRow" DisplayName="Write Row" HasHeaders="False" sap:VirtualizedContainerService.HintSize="434,367" sap2010:WorkflowViewState.IdRef="WriteRowConnections_1" ItemSelectionMode="Browse" Range="'Form Responses 1'" RowPosition="0" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Append">
+                                  <uga:WriteRowConnections AllFields="{x:Null}" ArrayRow="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="NotVerifyStudentAttendanceShit" BrowserItemId="1ZS0thftd7h9I8JUiylLZJgOK-53ngYec6aYUOP5h5Rs" ConnectionId="abbc86cd-b696-4594-8e0d-95506469011e" DataRow="[CurrentRow]" DataType="DataRow" DisplayName="Write Row" HasHeaders="False" sap:VirtualizedContainerService.HintSize="434,54" sap2010:WorkflowViewState.IdRef="WriteRowConnections_1" ItemSelectionMode="Browse" Range="'Form Responses 1'" RowPosition="0" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Append">
                                     <uga:WriteRowConnections.FileIdBackup>
                                       <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" StoredValue="{x:Null}">
                                         <usau:BackupSlot.BackupValues>
@@ -904,12 +911,12 @@
                                     </uga:WriteRowConnections.State>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </uga:WriteRowConnections>
-                                  <uga:DeleteRowsConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="StudentAttendanceData" BrowserItemId="1TFWR3hh-yBCgaKsls4nlWKkkS-FH__YMVRKF27VJYZA" ConnectionId="abbc86cd-b696-4594-8e0d-95506469011e" DeleteMode="Clear" DisplayName="Delete Rows" sap:VirtualizedContainerService.HintSize="434,315" sap2010:WorkflowViewState.IdRef="DeleteRowsConnections_1" ItemSelectionMode="Browse" Range="'Form Responses 1'" Rows="[deleteRow.ToString]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+                                  <uga:DeleteRowsConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="StudentAttendanceData" BrowserItemId="1TFWR3hh-yBCgaKsls4nlWKkkS-FH__YMVRKF27VJYZA" ConnectionId="abbc86cd-b696-4594-8e0d-95506469011e" DeleteMode="Clear" DisplayName="Delete Rows" sap:VirtualizedContainerService.HintSize="434,54" sap2010:WorkflowViewState.IdRef="DeleteRowsConnections_1" ItemSelectionMode="Browse" Range="'Form Responses 1'" Rows="[deleteRow.ToString]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
                                     <uga:DeleteRowsConnections.FileIdBackup>
                                       <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" StoredValue="{x:Null}">
                                         <usau:BackupSlot.BackupValues>
@@ -919,19 +926,19 @@
                                     </uga:DeleteRowsConnections.FileIdBackup>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </uga:DeleteRowsConnections>
                                   <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA52jKc9RYEEeLgoppyACOJwAAAAACAAAAAAAQZgAAAAEAACAAAADPaSLqyMi4h3gmyxzchw6bQy80Kdzv/XNmHVBBLfuxMQAAAAAOgAAAAAIAACAAAABiqIz5EyD/O4fANj+6qETJsAYnXMNGdGRaZTdd/x0E3CAAAACD5XJdij5ijUGqoPnpAOQKWJWFosfp7eZh7k5ZYbvqbEAAAAD9Kzd63Ue1yRSzsKYtCm0vgr1BkZpkCo3WIvzZ0vrSmVGRFBv+I3qHlugK89cRMe2fBfWDriytVAgZjdgJzcdZ" Result="[gmailPassword]" />
-                                  <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Dear Class Teacher,&#xA;&#xA;I hope this message finds you well. I am writing to inform you that the attendance sheet you uploaded for the &quot;+classShit+&quot; class in the month of &quot;+month+&quot; has not been verified. It is essential for our school, Mount Carmel School, to maintain accurate records of attendance.&#xA;&#xA;I kindly request that you review the attendance sheet and ensure its correctness. If any corrections or updates are necessary, please make the required changes and re-upload the attendance sheet for the &quot;+classShit+&quot; class in the month of  &quot;+month+&quot; at your earliest convenience.&#xA;&#xA;Accurate attendance records are crucial for the smooth functioning of our school, and your cooperation in this matter is greatly appreciated.&#xA;&#xA;If you have any questions or need any assistance, please feel free to reach out to me.&#xA;&#xA;Thank you for your prompt attention to this matter.&#xA;&#xA;Sincerely, Mount Carmal School Indore.&quot;+schoolEmail]" DisplayName="Send SMTP Mail Message" Email="[schoolEmail]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="434,152" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Password="[gmailPassword]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Attendance Sheet Verification Required" To="[teacherEmail]">
+                                  <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Dear Class Teacher,&#xA;&#xA;I hope this message finds you well. I am writing to inform you that the attendance sheet you uploaded for the &quot;+classShit+&quot; class in the month of &quot;+month+&quot; has not been verified. It is essential for our school, Mount Carmel School, to maintain accurate records of attendance.&#xA;&#xA;I kindly request that you review the attendance sheet and ensure its correctness. If any corrections or updates are necessary, please make the required changes and re-upload the attendance sheet for the &quot;+classShit+&quot; class in the month of  &quot;+month+&quot; at your earliest convenience.&#xA;&#xA;Accurate attendance records are crucial for the smooth functioning of our school, and your cooperation in this matter is greatly appreciated.&#xA;&#xA;If you have any questions or need any assistance, please feel free to reach out to me.&#xA;&#xA;Thank you for your prompt attention to this matter.&#xA;&#xA;Sincerely, Mount Carmal School Indore.&quot;+schoolEmail]" DisplayName="Send SMTP Mail Message" Email="[schoolEmail]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="434,54" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Password="[gmailPassword]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Attendance Sheet Verification Required" To="[teacherEmail]">
                                     <ui:SendMail.Files>
                                       <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                                     </ui:SendMail.Files>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
@@ -944,7 +951,7 @@
                       </ui:ForEach.Body>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -962,10 +969,22 @@
                   <Literal x:TypeArguments="x:String" Value="" />
                 </InArgument>
               </ugad:GoogleDriveApplicationScope.CredentialSecret>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </ugad:GoogleDriveApplicationScope>
           </Sequence>
         </ActivityAction>
       </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
   </Sequence>
 </Activity>
