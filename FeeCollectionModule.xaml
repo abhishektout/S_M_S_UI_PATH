@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="FeeCollectionModule" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="942,6434" sap2010:WorkflowViewState.IdRef="FeeCollectionModule_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable9" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd3="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugad="clr-namespace:UiPath.GSuite.Activities.Drive;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugas="clr-namespace:UiPath.GSuite.Activities.Sheets;assembly=UiPath.GSuite.Activities" xmlns:ugase="clr-namespace:UiPath.GSuite.Activities.Sheets.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="FeeCollectionModule" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="600,505" sap2010:WorkflowViewState.IdRef="FeeCollectionModule_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable9" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd3="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugad="clr-namespace:UiPath.GSuite.Activities.Drive;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugas="clr-namespace:UiPath.GSuite.Activities.Sheets;assembly=UiPath.GSuite.Activities" xmlns:ugase="clr-namespace:UiPath.GSuite.Activities.Sheets.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -154,7 +154,7 @@
       <AssemblyReference>System.Collections</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="FeeCollectionModule" sap:VirtualizedContainerService.HintSize="952,6369" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="FeeCollectionModule" sap:VirtualizedContainerService.HintSize="450,85" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="abhishek.tout@gmail.com" Name="schoolEmail" />
       <Variable x:TypeArguments="x:Int32" Name="index" />
@@ -162,10 +162,11 @@
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" Timeout="{x:Null}" Account="abhishek.tout@gmail.com" Action="UseExisting" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="890,83" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_1" Mode="Browse" SpreadsheetId="https://docs.google.com/spreadsheets/d/1fATBqYuI2-ExG3UFztxSmd0QI7gjLNStYDcKlpviH5M/edit?usp=drivesdk" SpreadsheetName="Fee Collect Form Student Information" UseConnectionService="False" UserEmail="abhishek.tout@gmail.com">
+    <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" Timeout="{x:Null}" Account="abhishek.tout@gmail.com" Action="UseExisting" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="388,83" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_1" Mode="Browse" SpreadsheetId="https://docs.google.com/spreadsheets/d/1fATBqYuI2-ExG3UFztxSmd0QI7gjLNStYDcKlpviH5M/edit?usp=drivesdk" SpreadsheetName="Fee Collect Form Student Information" UseConnectionService="False" UserEmail="abhishek.tout@gmail.com">
       <ugas:GoogleSheetsApplicationScope.Body>
         <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
           <ActivityAction.Argument>
@@ -225,13 +226,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ugas:GoogleSheetsApplicationScope>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[outPut]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="890,6135" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[outPut]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="388,190" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd1:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd1:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="856,5945" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,389" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="s:String[]" Name="files" />
               <Variable x:TypeArguments="x:String" Name="filedataa" />
@@ -251,7 +252,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ugad:GoogleDriveApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" Timeout="{x:Null}" Account="abhishek.tout@gmail.com" Connector="uipath-google-drive" DisplayName="Use Google Drive" sap:VirtualizedContainerService.HintSize="814,83" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_1" UseConnectionService="False" UserEmail="abhishek.tout@gmail.com">
+            <ugad:GoogleDriveApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" Timeout="{x:Null}" Account="abhishek.tout@gmail.com" Connector="uipath-google-drive" DisplayName="Use Google Drive" sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_1" UseConnectionService="False" UserEmail="abhishek.tout@gmail.com">
               <ugad:GoogleDriveApplicationScope.Body>
                 <ActivityAction x:TypeArguments="ugad:IGoogleDriveTarget">
                   <ActivityAction.Argument>
@@ -314,7 +315,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ugad:GoogleDriveApplicationScope>
-            <Assign sap:VirtualizedContainerService.HintSize="814,84" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="s:String[]">[files]</OutArgument>
               </Assign.To>
@@ -322,19 +323,19 @@
                 <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles("C:\Users\123\Desktop\S_M_S_UI_PAHT\FeeCollection\PaymentSlip\")]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="814,5610" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[files]">
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="434,54" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[files]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="x:String">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:String" Name="currentItem" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="780,5420" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,748" sap2010:WorkflowViewState.IdRef="Sequence_14">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:ReadPDFWithOCR Text="{x:Null}" DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="[currentItem]" sap:VirtualizedContainerService.HintSize="738,70" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_1" ImageDpi="150" Range="All">
+                    <ui:ReadPDFWithOCR Text="{x:Null}" DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="[currentItem]" sap:VirtualizedContainerService.HintSize="434,70" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_1" ImageDpi="150" Range="All">
                       <ui:ReadPDFWithOCR.OCREngine>
                         <ActivityFunc x:TypeArguments="sd2:Image, scg:IEnumerable(scg:KeyValuePair(sd3:Rectangle, x:String))">
                           <ActivityFunc.Argument>
@@ -350,7 +351,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:ReadPDFWithOCR>
-                    <Assign sap:VirtualizedContainerService.HintSize="738,84" sap2010:WorkflowViewState.IdRef="Assign_6">
+                    <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_6">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[email]</OutArgument>
                       </Assign.To>
@@ -358,7 +359,7 @@
                         <InArgument x:TypeArguments="x:String">[CurrentRow("Email").ToString]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="738,84" sap2010:WorkflowViewState.IdRef="Assign_3">
+                    <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_3">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[studentId]</OutArgument>
                       </Assign.To>
@@ -366,7 +367,7 @@
                         <InArgument x:TypeArguments="x:String">[CurrentRow("Student Id").ToString]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="738,84" sap2010:WorkflowViewState.IdRef="Assign_4">
+                    <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_4">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[amount]</OutArgument>
                       </Assign.To>
@@ -374,7 +375,7 @@
                         <InArgument x:TypeArguments="x:String">[CurrentRow("Fee Amount").ToString]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="738,84" sap2010:WorkflowViewState.IdRef="Assign_5">
+                    <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_5">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[transactionId]</OutArgument>
                       </Assign.To>
@@ -382,21 +383,21 @@
                         <InArgument x:TypeArguments="x:String">[CurrentRow("Transaction Id").ToString]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <If Condition="[paymentSlipOcrData.Contains(&quot;Reciept Date&quot;) And paymentSlipOcrData.Contains(&quot;Transaction Date&quot;) And paymentSlipOcrData.Contains(&quot;Transaction Id&quot;) And paymentSlipOcrData.Contains(&quot;Amount&quot;)]" sap:VirtualizedContainerService.HintSize="738,4726" sap2010:WorkflowViewState.IdRef="If_1">
+                    <If Condition="[paymentSlipOcrData.Contains(&quot;Reciept Date&quot;) And paymentSlipOcrData.Contains(&quot;Transaction Date&quot;) And paymentSlipOcrData.Contains(&quot;Transaction Id&quot;) And paymentSlipOcrData.Contains(&quot;Amount&quot;)]" sap:VirtualizedContainerService.HintSize="434,54" sap2010:WorkflowViewState.IdRef="If_1">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
-                        <Sequence sap:VirtualizedContainerService.HintSize="704,3925" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <Sequence sap:VirtualizedContainerService.HintSize="300,330" sap2010:WorkflowViewState.IdRef="Sequence_5">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim folderPath As String = &quot;C:\Users\123\Desktop\S_M_S_UI_PAHT\FeeCollection\PaymentSlip\&quot;&#xA;Dim files() As String = System.IO.Directory.GetFiles(folderPath)&#xA;&#xA;For Each file As String In files&#xA;    System.IO.File.Delete(file)&#xA;Next" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="662,54" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
+                          <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim folderPath As String = &quot;C:\Users\123\Desktop\S_M_S_UI_PAHT\FeeCollection\PaymentSlip\&quot;&#xA;Dim files() As String = System.IO.Directory.GetFiles(folderPath)&#xA;&#xA;For Each file As String In files&#xA;    System.IO.File.Delete(file)&#xA;Next" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="258,54" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
                             <ui:InvokeCode.Arguments>
                               <scg:Dictionary x:TypeArguments="x:String, Argument" />
                             </ui:InvokeCode.Arguments>
@@ -407,19 +408,20 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:InvokeCode>
-                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="662,1328" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="044c0c9d-c31b-4a68-979e-0581a0621386" Version="V2">
+                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="258,54" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="044c0c9d-c31b-4a68-979e-0581a0621386" Version="V2">
                             <uix:NApplicationCard.Body>
                               <ActivityAction x:TypeArguments="x:Object">
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                 </ActivityAction.Argument>
-                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1109" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,85" sap2010:WorkflowViewState.IdRef="Sequence_7">
                                   <Sequence.Variables>
                                     <Variable x:TypeArguments="x:String" Name="output" />
                                   </Sequence.Variables>
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'editable text'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,54" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="044c0c9d-c31b-4a68-979e-0581a0621386" Text="https://schoolmanagementsystemfrontend2.onrender.com/[k(Enter)]" Version="V3">
@@ -602,11 +604,17 @@
                             <uix:NApplicationCard.TargetApp>
                               <uix:TargetApp Area="-8, -8, 1040, 736" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="94c7ac8e7bd5fd9468979d44a2e086fb.png" Selector="&lt;html app='chrome.exe' title='New Tab' /&gt;" Title="New Tab" Url="chrome://newtab/" />
                             </uix:NApplicationCard.TargetApp>
-                          </uix:NApplicationCard>
-                          <If Condition="[outputData.Contains(&quot;Transaction id used....&quot;)]" sap:VirtualizedContainerService.HintSize="662,2375" sap2010:WorkflowViewState.IdRef="If_2">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NApplicationCard>
+                          <If Condition="[outputData.Contains(&quot;Transaction id used....&quot;)]" sap:VirtualizedContainerService.HintSize="258,54" sap2010:WorkflowViewState.IdRef="If_2">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
@@ -659,15 +667,21 @@
                               </Sequence>
                             </If.Then>
                             <If.Else>
-                              <Sequence sap:VirtualizedContainerService.HintSize="628,1766" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                              <Sequence sap:VirtualizedContainerService.HintSize="300,142" sap2010:WorkflowViewState.IdRef="Sequence_9">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <If Condition="[outputData.Contains(&quot;Successfully Fee Collect..&quot;)]" sap:VirtualizedContainerService.HintSize="586,1678" sap2010:WorkflowViewState.IdRef="If_3">
+                                <If Condition="[outputData.Contains(&quot;Successfully Fee Collect..&quot;)]" sap:VirtualizedContainerService.HintSize="258,54" sap2010:WorkflowViewState.IdRef="If_3">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
                                   <If.Then>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="476,617" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                    <Sequence sap:VirtualizedContainerService.HintSize="476,519" sap2010:WorkflowViewState.IdRef="Sequence_10">
                                       <Sequence.Variables>
                                         <Variable x:TypeArguments="x:String" Name="gmailPassword" />
                                         <Variable x:TypeArguments="x:Int32" Name="deleteRow" />
@@ -733,13 +747,13 @@
                                         </sap:WorkflowViewStateService.ViewState>
                                       </uga:DeleteRowsConnections>
                                       <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="GetPassword_3" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA52jKc9RYEEeLgoppyACOJwAAAAACAAAAAAAQZgAAAAEAACAAAACv6ozzDN+kseUy5+m1UbJSNIbs+txl+x/pdKoxTjgvogAAAAAOgAAAAAIAACAAAADKZVnr/18hBa/8w7gxJV4W/K39oJJDSuq6JK1iGKrlciAAAAD4oWsK5SsjYY9kbI120aVWIfkviduu02shYbZOhg8mnEAAAAAdRKULmATw5uvdN/mO3lKRljQwpPjAB0lLZ+zBCGbR8kTdvvXWhUKBGDR72LJhe/ACyp/H85N5M7A76dlCIvCO" Result="[gmailPassword]" />
-                                      <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Dear Student,&#xA;&#xA;We are pleased to inform you that your Mount Carmel School fee payment has been successfully received. We want to express our appreciation for your prompt payment. Your commitment to timely payments helps us maintain the high standards of education and services we provide to our students.&#xA;&#xA;Here are the details of your payment:&#xA;&#xA;Student ID: &quot;+studentId+&quot;&#xA;Your timely fee payment is essential in ensuring the smooth operation of the school and the continued delivery of quality education. We greatly value your support and dedication to Mount Carmel School.&#xA;&#xA;If you have any questions or need assistance with any school-related matters, please feel free to contact our school's administrative office at [School Contact Information]. We are always here to assist you.&#xA;&#xA;Thank you for choosing Mount Carmel School, and we look forward to serving your educational needs in the future. For more information and updates, please visit our school's website at [School Website].&#xA;&#xA;Best regards,&#xA;Mount Carmel School Administration&#xA;&quot;+schoolEmail]" DisplayName="Send SMTP Mail Message" Email="[schoolEmail]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="434,152" sap2010:WorkflowViewState.IdRef="SendMail_4" IgnoreCRL="False" IsBodyHtml="False" Password="[gmailPassword]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Successful Collection of Mount Carmel School Fee Payment" To="[email]">
+                                      <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Dear Student,&#xA;&#xA;We are pleased to inform you that your Mount Carmel School fee payment has been successfully received. We want to express our appreciation for your prompt payment. Your commitment to timely payments helps us maintain the high standards of education and services we provide to our students.&#xA;&#xA;Here are the details of your payment:&#xA;&#xA;Student ID: &quot;+studentId+&quot;&#xA;Your timely fee payment is essential in ensuring the smooth operation of the school and the continued delivery of quality education. We greatly value your support and dedication to Mount Carmel School.&#xA;&#xA;If you have any questions or need assistance with any school-related matters, please feel free to contact our school's administrative office at [School Contact Information]. We are always here to assist you.&#xA;&#xA;Thank you for choosing Mount Carmel School, and we look forward to serving your educational needs in the future. For more information and updates, please visit our school's website at [School Website].&#xA;&#xA;Best regards,&#xA;Mount Carmel School Administration&#xA;&quot;+schoolEmail]" DisplayName="Send SMTP Mail Message" Email="[schoolEmail]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="434,54" sap2010:WorkflowViewState.IdRef="SendMail_4" IgnoreCRL="False" IsBodyHtml="False" Password="[gmailPassword]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Successful Collection of Mount Carmel School Fee Payment" To="[email]">
                                         <ui:SendMail.Files>
                                           <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                                         </ui:SendMail.Files>
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
@@ -747,13 +761,19 @@
                                     </Sequence>
                                   </If.Then>
                                   <If.Else>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="552,877" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                    <Sequence sap:VirtualizedContainerService.HintSize="300,142" sap2010:WorkflowViewState.IdRef="Sequence_11">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <If Condition="[outputData.Contains(&quot;internal server error....&quot;)]" sap:VirtualizedContainerService.HintSize="510,789" sap2010:WorkflowViewState.IdRef="If_4">
+                                      <If Condition="[outputData.Contains(&quot;internal server error....&quot;)]" sap:VirtualizedContainerService.HintSize="258,54" sap2010:WorkflowViewState.IdRef="If_4">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
                                         <If.Then>
                                           <Sequence sap:VirtualizedContainerService.HintSize="476,523" sap2010:WorkflowViewState.IdRef="Sequence_12">
                                             <Sequence.Variables>
@@ -821,7 +841,7 @@
                         </Sequence>
                       </If.Then>
                       <If.Else>
-                        <Sequence sap:VirtualizedContainerService.HintSize="476,617" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <Sequence sap:VirtualizedContainerService.HintSize="476,519" sap2010:WorkflowViewState.IdRef="Sequence_6">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Name="gmailPassword" />
                             <Variable x:TypeArguments="x:Int32" Name="deleteRow" />
@@ -843,13 +863,13 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:InvokeCode>
-                          <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Dear Student,&#xA;&#xA;I hope this message finds you well. We are writing to inform you about the status of your Mount Carmel School fee payment process. It appears that your payment slip has not been successfully verified. To complete your fee payment, we kindly request you to upload the payment slip correctly and resubmit your Mount Carmel School fee payment form.&#xA;&#xA;Your Student ID: &quot;+studentId+&quot;&#xA;&#xA;To ensure a seamless and accurate payment process, please follow these steps to upload your payment slip:&#xA;&#xA;Log in to your Mount Carmel School fee payment portal using your credentials.&#xA;&#xA;Navigate to the payment verification section or the designated area for uploading payment proof.&#xA;&#xA;Upload your payment slip or receipt in a format that is compatible with the portal's requirements (e.g., PDF, JPG, PNG).&#xA;&#xA;Double-check that all the necessary details, such as the transaction amount, date, and other relevant information, are clearly visible on the uploaded document.&#xA;&#xA;Once you have successfully uploaded the payment slip, confirm the submission by following the prompts provided on the portal.&#xA;&#xA;If you encounter any difficulties during this process or have questions, please don't hesitate to reach out to our school's administrative office at [School Contact Information]. Our team is available to assist you with any concerns and ensure a smooth fee payment experience.&#xA;&#xA;Thank you for your attention to this matter. Your prompt action will help us in verifying your fee payment, and we greatly appreciate your cooperation.&#xA;&#xA;Best regards,&#xA;&#xA;Mount Carmel School Administration&#xA;&quot;+schoolEmail]" DisplayName="Send SMTP Mail Message" Email="[schoolEmail]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="434,152" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Password="[gmailPassword]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Important Notice: Mount Carmel School Fee Payment Verification" To="[email]">
+                          <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;Dear Student,&#xA;&#xA;I hope this message finds you well. We are writing to inform you about the status of your Mount Carmel School fee payment process. It appears that your payment slip has not been successfully verified. To complete your fee payment, we kindly request you to upload the payment slip correctly and resubmit your Mount Carmel School fee payment form.&#xA;&#xA;Your Student ID: &quot;+studentId+&quot;&#xA;&#xA;To ensure a seamless and accurate payment process, please follow these steps to upload your payment slip:&#xA;&#xA;Log in to your Mount Carmel School fee payment portal using your credentials.&#xA;&#xA;Navigate to the payment verification section or the designated area for uploading payment proof.&#xA;&#xA;Upload your payment slip or receipt in a format that is compatible with the portal's requirements (e.g., PDF, JPG, PNG).&#xA;&#xA;Double-check that all the necessary details, such as the transaction amount, date, and other relevant information, are clearly visible on the uploaded document.&#xA;&#xA;Once you have successfully uploaded the payment slip, confirm the submission by following the prompts provided on the portal.&#xA;&#xA;If you encounter any difficulties during this process or have questions, please don't hesitate to reach out to our school's administrative office at [School Contact Information]. Our team is available to assist you with any concerns and ensure a smooth fee payment experience.&#xA;&#xA;Thank you for your attention to this matter. Your prompt action will help us in verifying your fee payment, and we greatly appreciate your cooperation.&#xA;&#xA;Best regards,&#xA;&#xA;Mount Carmel School Administration&#xA;&quot;+schoolEmail]" DisplayName="Send SMTP Mail Message" Email="[schoolEmail]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="434,54" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Password="[gmailPassword]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Important Notice: Mount Carmel School Fee Payment Verification" To="[email]">
                             <ui:SendMail.Files>
                               <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                             </ui:SendMail.Files>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
@@ -883,6 +903,12 @@
                   </Sequence>
                 </ActivityAction>
               </ui:ForEach.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </ui:ForEach>
           </Sequence>
         </ActivityAction>

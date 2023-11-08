@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ReadExcelData" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1590,16601" sap2010:WorkflowViewState.IdRef="ReadExcelData_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable2" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd3="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugad="clr-namespace:UiPath.GSuite.Activities.Drive;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugas="clr-namespace:UiPath.GSuite.Activities.Sheets;assembly=UiPath.GSuite.Activities" xmlns:ugase="clr-namespace:UiPath.GSuite.Activities.Sheets.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugdm="clr-namespace:UiPath.GSuite.Drive.Models;assembly=UiPath.GSuite" xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ReadExcelData" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="600,505" sap2010:WorkflowViewState.IdRef="ReadExcelData_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable2" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd3="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugad="clr-namespace:UiPath.GSuite.Activities.Drive;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugas="clr-namespace:UiPath.GSuite.Activities.Sheets;assembly=UiPath.GSuite.Activities" xmlns:ugase="clr-namespace:UiPath.GSuite.Activities.Sheets.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugdm="clr-namespace:UiPath.GSuite.Drive.Models;assembly=UiPath.GSuite" xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -177,7 +177,7 @@
       <AssemblyReference>Studio.Generated.TypedDataTable9</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ReadExcelData" sap:VirtualizedContainerService.HintSize="1600,16536" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ReadExcelData" sap:VirtualizedContainerService.HintSize="450,424" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="153087810656-bb73jim91acqo40o0gi1bt79muies6je.apps.googleusercontent.com" Name="clientId" />
       <Variable x:TypeArguments="x:String" Default="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" Name="secretKey" />
@@ -194,7 +194,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" Timeout="{x:Null}" Account="abhishek.tout@gmail.com" Action="UseExisting" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="1538,83" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_1" Mode="Browse" SpreadsheetId="https://docs.google.com/spreadsheets/d/1vDqyY1KXDWuGoW1WiuIhzb70gk4wvuMxDO8SI9Y-L6k/edit?usp=drivesdk" SpreadsheetName="Student Registration Information" UseConnectionService="False" UserEmail="abhishek.tout@gmail.com">
+    <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" Timeout="{x:Null}" Account="abhishek.tout@gmail.com" Action="UseExisting" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="388,83" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_1" Mode="Browse" SpreadsheetId="https://docs.google.com/spreadsheets/d/1vDqyY1KXDWuGoW1WiuIhzb70gk4wvuMxDO8SI9Y-L6k/edit?usp=drivesdk" SpreadsheetName="Student Registration Information" UseConnectionService="False" UserEmail="abhishek.tout@gmail.com">
       <ugas:GoogleSheetsApplicationScope.Body>
         <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
           <ActivityAction.Argument>
@@ -266,13 +266,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ugas:GoogleSheetsApplicationScope>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[output]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1538,16302" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[output]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="388,190" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd1:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd1:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1504,16112" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1504,12891" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="aadharFront" />
               <Variable x:TypeArguments="ugdm:GDriveLocalItem" Name="outputFile" />
@@ -497,13 +497,13 @@
                 <InArgument x:TypeArguments="x:String">[paymentSlip.replace("open?id=", "file/d/")]</InArgument>
               </Assign.Value>
             </Assign>
-            <ugad:GoogleDriveApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" Timeout="{x:Null}" Account="abhishek.tout@gmail.com" Connector="uipath-google-drive" DisplayName="Use Google Drive" sap:VirtualizedContainerService.HintSize="1462,13048" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_4" UseConnectionService="False" UserEmail="abhishek.tout@gmail.com">
+            <ugad:GoogleDriveApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" Timeout="{x:Null}" Account="abhishek.tout@gmail.com" Connector="uipath-google-drive" DisplayName="Use Google Drive" sap:VirtualizedContainerService.HintSize="1462,9827" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_4" UseConnectionService="False" UserEmail="abhishek.tout@gmail.com">
               <ugad:GoogleDriveApplicationScope.Body>
                 <ActivityAction x:TypeArguments="ugad:IGoogleDriveTarget">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ugad:IGoogleDriveTarget" Name="GoogleDrive" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1428,12904" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1428,9683" sap2010:WorkflowViewState.IdRef="Sequence_9">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="s:String[]" Name="files" />
                     </Sequence.Variables>
@@ -554,13 +554,13 @@
                         <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles("C:\Users\123\Desktop\Student Document\")]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1366,12575" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[files]">
+                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1366,9354" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[files]">
                       <ui:ForEach.Body>
                         <ActivityAction x:TypeArguments="x:String">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:String" Name="currentItem" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1332,12385" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1332,9164" sap2010:WorkflowViewState.IdRef="Sequence_10">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="OcrData" />
                             </Sequence.Variables>
@@ -585,7 +585,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:ReadPDFWithOCR>
-                            <If Condition="[OcrData.Contains(&quot;DOB&quot;) And OcrData.Contains(&quot;Government of India&quot;) And OcrData.Contains(&quot;VID&quot;)]" sap:VirtualizedContainerService.HintSize="1290,12187" sap2010:WorkflowViewState.IdRef="If_1">
+                            <If Condition="[OcrData.Contains(&quot;DOB&quot;) And OcrData.Contains(&quot;Government of India&quot;) And OcrData.Contains(&quot;VID&quot;)]" sap:VirtualizedContainerService.HintSize="1290,8966" sap2010:WorkflowViewState.IdRef="If_1">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -593,7 +593,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                               <If.Then>
-                                <Sequence sap:VirtualizedContainerService.HintSize="1256,11386" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                <Sequence sap:VirtualizedContainerService.HintSize="1256,8782" sap2010:WorkflowViewState.IdRef="Sequence_11">
                                   <Sequence.Variables>
                                     <Variable x:TypeArguments="x:String" Name="files1" />
                                   </Sequence.Variables>
@@ -629,13 +629,13 @@
                                       <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles("C:\Users\123\Desktop\Student Document\")]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1214,10875" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[files]">
+                                  <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1214,8271" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[files]">
                                     <ui:ForEach.Body>
                                       <ActivityAction x:TypeArguments="x:String">
                                         <ActivityAction.Argument>
                                           <DelegateInArgument x:TypeArguments="x:String" Name="currentItem" />
                                         </ActivityAction.Argument>
-                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1180,10685" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1180,8081" sap2010:WorkflowViewState.IdRef="Sequence_13">
                                           <Sequence.Variables>
                                             <Variable x:TypeArguments="x:String" Name="aadharBackOcrData" />
                                           </Sequence.Variables>
@@ -660,7 +660,7 @@
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                           </ui:ReadPDFWithOCR>
-                                          <If Condition="[aadharBackOcrData.Contains(&quot;Address&quot;) And( (aadharBackOcrData.Contains(&quot;S/O&quot;)) Or (aadharBackOcrData.Contains(&quot;W/O&quot;)) Or (aadharBackOcrData.Contains(&quot;D/O&quot;)) )And aadharBackOcrData.Contains(&quot;VID&quot;)]" sap:VirtualizedContainerService.HintSize="1138,10487" sap2010:WorkflowViewState.IdRef="If_2">
+                                          <If Condition="[aadharBackOcrData.Contains(&quot;Address&quot;) And( (aadharBackOcrData.Contains(&quot;S/O&quot;)) Or (aadharBackOcrData.Contains(&quot;W/O&quot;)) Or (aadharBackOcrData.Contains(&quot;D/O&quot;)) )And aadharBackOcrData.Contains(&quot;VID&quot;)]" sap:VirtualizedContainerService.HintSize="1138,7883" sap2010:WorkflowViewState.IdRef="If_2">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -668,7 +668,7 @@
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                             <If.Then>
-                                              <Sequence sap:VirtualizedContainerService.HintSize="1104,9686" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                              <Sequence sap:VirtualizedContainerService.HintSize="1104,7699" sap2010:WorkflowViewState.IdRef="Sequence_14">
                                                 <Sequence.Variables>
                                                   <Variable x:TypeArguments="x:String" Name="temp" />
                                                 </Sequence.Variables>
@@ -704,13 +704,13 @@
                                                     <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles("C:\Users\123\Desktop\Student Document\")]</InArgument>
                                                   </Assign.Value>
                                                 </Assign>
-                                                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1062,9286" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[files]">
+                                                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1062,7299" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[files]">
                                                   <ui:ForEach.Body>
                                                     <ActivityAction x:TypeArguments="x:String">
                                                       <ActivityAction.Argument>
                                                         <DelegateInArgument x:TypeArguments="x:String" Name="currentItem" />
                                                       </ActivityAction.Argument>
-                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1028,9096" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1028,7109" sap2010:WorkflowViewState.IdRef="Sequence_16">
                                                         <Sequence.Variables>
                                                           <Variable x:TypeArguments="x:String" Name="castCertificateOcrData" />
                                                         </Sequence.Variables>
@@ -735,7 +735,7 @@
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                         </ui:ReadPDFWithOCR>
-                                                        <If Condition="[castCertificateOcrData.Contains(&quot;CASTE CERTIFICATE&quot;) And castCertificateOcrData.Contains(&quot;RS/&quot;)]" sap:VirtualizedContainerService.HintSize="986,8898" sap2010:WorkflowViewState.IdRef="If_3">
+                                                        <If Condition="[castCertificateOcrData.Contains(&quot;CASTE CERTIFICATE&quot;) And castCertificateOcrData.Contains(&quot;RS/&quot;)]" sap:VirtualizedContainerService.HintSize="986,6911" sap2010:WorkflowViewState.IdRef="If_3">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -743,7 +743,7 @@
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                           <If.Then>
-                                                            <Sequence sap:VirtualizedContainerService.HintSize="952,8097" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                                            <Sequence sap:VirtualizedContainerService.HintSize="952,6727" sap2010:WorkflowViewState.IdRef="Sequence_17">
                                                               <sap:WorkflowViewStateService.ViewState>
                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -776,13 +776,13 @@
                                                                   <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles("C:\Users\123\Desktop\Student Document\")]</InArgument>
                                                                 </Assign.Value>
                                                               </Assign>
-                                                              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="910,7697" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[files]">
+                                                              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="910,6327" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[files]">
                                                                 <ui:ForEach.Body>
                                                                   <ActivityAction x:TypeArguments="x:String">
                                                                     <ActivityAction.Argument>
                                                                       <DelegateInArgument x:TypeArguments="x:String" Name="currentItem" />
                                                                     </ActivityAction.Argument>
-                                                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="876,7507" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="876,6137" sap2010:WorkflowViewState.IdRef="Sequence_19">
                                                                       <Sequence.Variables>
                                                                         <Variable x:TypeArguments="x:String" Name="pa" />
                                                                         <Variable x:TypeArguments="x:String" Name="paymentSlipOcrData" />
@@ -808,7 +808,7 @@
                                                                           </scg:Dictionary>
                                                                         </sap:WorkflowViewStateService.ViewState>
                                                                       </ui:ReadPDFWithOCR>
-                                                                      <If Condition="[paymentSlipOcrData.Contains(&quot;Reciept Date&quot;) And paymentSlipOcrData.Contains(&quot;Transaction Date&quot;) And paymentSlipOcrData.Contains(&quot;Transaction Id&quot;) And paymentSlipOcrData.Contains(&quot;Amount&quot;)]" sap:VirtualizedContainerService.HintSize="834,7309" sap2010:WorkflowViewState.IdRef="If_4">
+                                                                      <If Condition="[paymentSlipOcrData.Contains(&quot;Reciept Date&quot;) And paymentSlipOcrData.Contains(&quot;Transaction Date&quot;) And paymentSlipOcrData.Contains(&quot;Transaction Id&quot;) And paymentSlipOcrData.Contains(&quot;Amount&quot;)]" sap:VirtualizedContainerService.HintSize="834,5939" sap2010:WorkflowViewState.IdRef="If_4">
                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -816,7 +816,7 @@
                                                                           </scg:Dictionary>
                                                                         </sap:WorkflowViewStateService.ViewState>
                                                                         <If.Then>
-                                                                          <Sequence sap:VirtualizedContainerService.HintSize="800,6508" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                                                          <Sequence sap:VirtualizedContainerService.HintSize="800,5755" sap2010:WorkflowViewState.IdRef="Sequence_20">
                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -833,13 +833,13 @@
                                                                                 </scg:Dictionary>
                                                                               </sap:WorkflowViewStateService.ViewState>
                                                                             </ui:InvokeCode>
-                                                                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="758,6326" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="c5ac0e73-b66c-43d2-bcb1-f655cd50edd7" Version="V2">
+                                                                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="758,5573" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="c5ac0e73-b66c-43d2-bcb1-f655cd50edd7" Version="V2">
                                                                               <uix:NApplicationCard.Body>
                                                                                 <ActivityAction x:TypeArguments="x:Object">
                                                                                   <ActivityAction.Argument>
                                                                                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                                                                   </ActivityAction.Argument>
-                                                                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="724,6107" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                                                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="724,5354" sap2010:WorkflowViewState.IdRef="Sequence_23">
                                                                                     <Sequence.Variables>
                                                                                       <Variable x:TypeArguments="x:String" Name="formResponse" />
                                                                                     </Sequence.Variables>
@@ -1285,7 +1285,7 @@
                                                                                         </Catch>
                                                                                       </TryCatch.Catches>
                                                                                     </TryCatch>
-                                                                                    <If Condition="[formResponse.Contains(&quot;transaction id not&quot;)]" sap:VirtualizedContainerService.HintSize="662,3299" sap2010:WorkflowViewState.IdRef="If_5">
+                                                                                    <If Condition="[formResponse.Contains(&quot;transaction id not&quot;)]" sap:VirtualizedContainerService.HintSize="662,2546" sap2010:WorkflowViewState.IdRef="If_5">
                                                                                       <sap:WorkflowViewStateService.ViewState>
                                                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1373,13 +1373,13 @@
                                                                                         </Sequence>
                                                                                       </If.Then>
                                                                                       <If.Else>
-                                                                                        <Sequence sap:VirtualizedContainerService.HintSize="628,2498" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                                                                        <Sequence sap:VirtualizedContainerService.HintSize="628,1745" sap2010:WorkflowViewState.IdRef="Sequence_25">
                                                                                           <sap:WorkflowViewStateService.ViewState>
                                                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                             </scg:Dictionary>
                                                                                           </sap:WorkflowViewStateService.ViewState>
-                                                                                          <If Condition="[catchBlock]" sap:VirtualizedContainerService.HintSize="586,2410" sap2010:WorkflowViewState.IdRef="If_6">
+                                                                                          <If Condition="[catchBlock]" sap:VirtualizedContainerService.HintSize="586,1657" sap2010:WorkflowViewState.IdRef="If_6">
                                                                                             <If.Then>
                                                                                               <Sequence sap:VirtualizedContainerService.HintSize="476,678" sap2010:WorkflowViewState.IdRef="Sequence_28">
                                                                                                 <Sequence.Variables>
@@ -1448,13 +1448,13 @@
                                                                                               </Sequence>
                                                                                             </If.Then>
                                                                                             <If.Else>
-                                                                                              <Sequence sap:VirtualizedContainerService.HintSize="552,1548" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                                                                              <Sequence sap:VirtualizedContainerService.HintSize="552,795" sap2010:WorkflowViewState.IdRef="Sequence_26">
                                                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                                   </scg:Dictionary>
                                                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                                                <If Condition="[formResponse.Contains(&quot;already registered....&quot;)]" sap:VirtualizedContainerService.HintSize="510,1460" sap2010:WorkflowViewState.IdRef="If_7">
+                                                                                                <If Condition="[formResponse.Contains(&quot;already registered....&quot;)]" sap:VirtualizedContainerService.HintSize="510,707" sap2010:WorkflowViewState.IdRef="If_7">
                                                                                                   <If.Then>
                                                                                                     <Sequence sap:VirtualizedContainerService.HintSize="476,523" sap2010:WorkflowViewState.IdRef="Sequence_29">
                                                                                                       <Sequence.Variables>
