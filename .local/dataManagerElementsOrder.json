@@ -81,7 +81,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "ReadExcelData.xaml",
+      "Path": "RegistrationModule.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "schoolEmail&Sequence_1",
@@ -146,73 +146,39 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "UseGoogleDrive.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "rightUrl&Sequence_2",
-        "excelUrl&Sequence_2",
-        "newDocumentId&Sequence_2"
-      ],
-      "ArgumentsSectionElementsOrder": [],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Sequence.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": [],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "deleteRowInExcel.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "deleteRow&Sequence_7",
-        "index&Sequence_1",
-        "outputTable&Sequence_1",
-        "_out_ReadRangeConnections_Generic_1_1__RangeInformation&Sequence_1",
-        "filterTable&Sequence_3"
-      ],
-      "ArgumentsSectionElementsOrder": [],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
       "Path": "AttendanceModule.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "deleteRow&Sequence_8",
-        "studentIdRightFlag&Sequence_1",
-        "gmailPassword&Sequence_15",
-        "gmailPassword&Sequence_13",
-        "toastText&Sequence_11",
-        "absentDay&Sequence_10",
-        "afterTextAbsentDay&Sequence_10",
-        "presentDay&Sequence_10",
-        "afterTextPresentDay&Sequence_10",
-        "afterTextStudentId&Sequence_10",
-        "studentId&Sequence_10",
-        "codeOutput&Sequence_8",
-        "currentItemString&Sequence_10",
-        "AbsentCounts&Sequence_8",
-        "PresentCounts&Sequence_8",
-        "AttendanceMarks&Sequence_8",
-        "StudentIDs&Sequence_8",
-        "deleteRow&Sequence_9",
-        "index&Sequence_1",
-        "output&Sequence_1",
         "schoolEmail&Sequence_1",
-        "gmailPassword&Sequence_9",
-        "teacherEmail&Sequence_4",
-        "classShit&Sequence_4",
-        "attendanceShit&Sequence_4",
-        "month&Sequence_4",
+        "index&Sequence_1",
+        "studentIdRightFlag&Sequence_1",
+        "output&Sequence_1",
         "outputDataTable&Sequence_4",
-        "monthShit&Sequence_7",
+        "month&Sequence_4",
+        "attendanceShit&Sequence_4",
+        "classShit&Sequence_4",
+        "teacherEmail&Sequence_4",
+        "files&Sequence_6",
         "ocrData&Sequence_7",
-        "files&Sequence_6"
+        "monthShit&Sequence_7",
+        "StudentIDs&Sequence_8",
+        "AttendanceMarks&Sequence_8",
+        "PresentCounts&Sequence_8",
+        "AbsentCounts&Sequence_8",
+        "codeOutput&Sequence_8",
+        "deleteRow&Sequence_8",
+        "afterTextStudentId&Sequence_10",
+        "currentItemString&Sequence_10",
+        "studentId&Sequence_10",
+        "afterTextPresentDay&Sequence_10",
+        "presentDay&Sequence_10",
+        "afterTextAbsentDay&Sequence_10",
+        "absentDay&Sequence_10",
+        "toastText&Sequence_11",
+        "gmailPassword&Sequence_13",
+        "gmailPassword&Sequence_15",
+        "gmailPassword&Sequence_9",
+        "deleteRow&Sequence_9"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
@@ -271,16 +237,6 @@
         "argument1",
         "AttendanceData"
       ],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "WriteColumn.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "outPut&Sequence_2"
-      ],
-      "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }
